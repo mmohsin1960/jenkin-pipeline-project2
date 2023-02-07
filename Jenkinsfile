@@ -35,7 +35,7 @@ pipeline {
                 sshagent(['prodserver']) {
                     sh "ssh -o StrictHostKeyChecking=no ubuntu@10.0.1.230 docker rm -f mywebapp"
                     sh "ssh -o StrictHostKeyChecking=no ubuntu@10.0.1.230 docker rmi -f mywebapp"
-                    sh "ssh -o StrictHostKeyChecking=no ubuntu@10.0.1.230 docker run -itd --name mywebapp -p 9001:80 mohsin1056/task"
+                    sh "ssh -o StrictHostKeyChecking=no ubuntu@10.0.1.230 docker run -itd --name mywebapp -p 9001:80 mohsin1056/task-dsl"
                 }
             }
         }
