@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage("Git Checkout docker file") {
             steps {
-                git branch: 'main', url: 'https://github.com/mmohsin1960/Jenkin-pipeline-project1.git'
+                git branch: 'main', url: 'https://github.com/mmohsin1960/jenkin-pipeline-project2.git'
                 sh 'pwd'
                 sh 'ls'
             }
